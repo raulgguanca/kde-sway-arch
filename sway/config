@@ -89,6 +89,10 @@ set $menu "wofi --show run"
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # System status management
+    bindsym $mod+Shift+Y exec "shutdown now"
+    bindsym $mod+Shift+F exec "shutdown -r now"
 #
 # Moving around:
 #
@@ -200,7 +204,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $mod+p mode "resize"
 #
 # Utilities:
 #
@@ -251,5 +255,11 @@ client.focused          $bg-color-border     $bg-color          $text-color     
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #9d0208
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #9d0208
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #9d0208
+
+# brightness control
+bindsym $mod+shift+t exec "brightnessctl set +5%"
+bindsym $mod+shift+w exec "brightnessctl set 5%-"
+bindsym $mod+shift+n exec "ddcutil setvcp 10 + 5"
+bindsym $mod+shift+v exec "ddcutil setvcp 10 - 5"
 
 include /etc/sway/config.d/*
