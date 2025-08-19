@@ -1,36 +1,8 @@
 alias aliases='nvim ~/.bash_aliases'
 alias r='ranger_cd'
-alias d="setxkbmap -layout 'latam' -variant 'dvorak'"
-alias l="setxkbmap -layout 'latam'"
-alias surofi='sudo rofi -show run'
+alias suwofi='sudo wofi -show run'
 alias sdn='shutdown now'
 alias sps='sudo pacman -Syu'
 alias init='nvim ~/.config/nvim/init.vim'
-alias dual="sh ~/.screenlayout/dual.sh"
-alias alone="sh ~/.screenlayout/alone.sh"
-alias off="sh ~/.screenlayout/off.sh"
-alias game="sh ~/.screenlayout/game.sh"
-alias maxvga='xrandr --output VGA1 --brightness 1'
 alias yt='mpv --ytdl-format=22'
 alias fight='sh ~/Fightcade/Fightcade2.sh'
-alias mmax='xrandr --output eDP1 --brightness 1 --gamma 1:0.88:0.76 && xrandr --output VGA1 --brightness 1 --gamma 1:0.88:0.76 && xrandr --output HDMI1 --brightness 1 --gamma 1:0.88:0.76'
-alias mhigh='xrandr --output eDP1 --brightness 0.8 --gamma 1:0.88:0.76 && xrandr --output VGA1 --brightness 0.8 --gamma 1:0.88:0.76 && xrandr --output HDMI1 --brightness 0.8 --gamma 1:0.88:0.76'
-alias mmed='xrandr --output eDP1 --brightness 0.7 --gamma 1:0.88:0.76 && xrandr --output VGA1 --brightness 0.7 --gamma 1:0.88:0.76 && xrandr --output HDMI1 --brightness 0.7 --gamma 1:0.88:0.76'
-alias mlow='xrandr --output eDP1 --brightness 0.5 --gamma 1:0.88:0.76 && xrandr --output VGA1 --brightness 0.5 --gamma 1:0.88:0.76 && xrandr --output HDMI1 --brightness 0.5 --gamma 1:0.88:0.76'
-alias mulow='xrandr --output eDP1 --brightness 0.3 --gamma 1:0.88:0.76 && xrandr --output VGA1 --brightness 0.3 --gamma 1:0.88:0.76 && xrandr --output HDMI1 --brightness 0.3 --gamma 1:0.88:0.76'
-alias emax='xrandr --output eDP1 --brightness 1 --gamma 1:0.88:0.76'
-alias ehigh='xrandr --output eDP1 --brightness 0.8 --gamma 1:0.88:0.76'
-alias emed='xrandr --output eDP1 --brightness 0.7 --gamma 1:0.88:0.76'
-alias elow='xrandr --output eDP1 --brightness 0.5 --gamma 1:0.88:0.76'
-alias eulow='xrandr --output eDP1 --brightness 0.3 --gamma 1:0.88:0.76'
-alias hmax='xrandr --output HDMI1 --brightness 1 --gamma 1:0.88:0.76'
-alias hhigh='xrandr --output HDMI1 --brightness 0.8 --gamma 1:0.88:0.76'
-alias hmed='xrandr --output HDMI1 --brightness 0.7 --gamma 1:0.88:0.76'
-alias hlow='xrandr --output HDMI1 --brightness 0.5 --gamma 1:0.88:0.76'
-alias hulow='xrandr --output HDMI1 --brightness 0.3 --gamma 1:0.88:0.76'
-alias vmax='xrandr --output VGA1 --brightness 1 --gamma 1:0.88:0.76'
-alias vhigh='xrandr --output VGA1 --brightness 0.8 --gamma 1:0.88:0.76'
-alias vmed='xrandr --output VGA1 --brightness 0.7 --gamma 1:0.88:0.76'
-alias vlow='xrandr --output VGA1 --brightness 0.5 --gamma 1:0.88:0.76'
-alias vulow='xrandr --output VGA1 --brightness 0.3 --gamma 1:0.88:0.76'
-
