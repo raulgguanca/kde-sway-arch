@@ -1,0 +1,40 @@
+Directories:
+
+##Change esc to caps in vscode neovim
+~/.config/Code/User/settings.json
+{
+  "keyboard.dispatch": "keyCode",
+}
+
+##Ranger
+#Set w3m
+~/.config/ranger/rc.conf
+set preview_images true
+
+#Set neovim to default editor
+~/.config/ranger/rifle.conf
+Misc
+mine ^text, label editor = nvim -- "$@"
+!mime ^text, label editor, ext xml|json|csv|tex|py|pl|rb|js|sh|php = nvim -- "$@"
+
+##Change GTK-Fonts
+GTK2
+.config/gtk-3.0/settings.ini
+gtk-font-name=Typewriter
+
+GTK3
+.gtkrc-2.0
+gtk-font-name="Typewriter"
+
+##MPV
+mpv --ytdl-format=22 #link
+streamlink -p mpv #link #quality
+
+##Systemd slices
+nvim /usr/lib/systemd/system/user-.slice.d
+
+[Slice]
+TasksMax=70%
+
+systemctl daemon-reload
+
