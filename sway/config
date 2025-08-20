@@ -23,7 +23,7 @@ set $menu "wofi --show run"
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /home/raul/external/pictures/wallpapers/wall.jpg fill
 
-# Example configuration:
+# Monitors configuration:
 #
 #output LVDS-1 resolution 1366x768 position 1280,0 #trasnform 90 #rotate right
 #output HDMI-A-1 resolution 1280x1024 position 0,0
@@ -32,14 +32,16 @@ set $menu "wofi --show run"
 
 ### Idle configuration
 
- exec swayidle -w \
-          timeout 300 'swaylock -f -c 000000' \
-          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-          before-sleep 'swaylock -f -c 000000'
+   bindsym $mod+Pause exec swaylock -f -e -i ~/file.jpg
 
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+   exec swayidle -w \
+          timeout 0 'swaymsg "inhibit_idle open"' \
+          timeout 600 'swaylock -f -e -i ~/file.jpg' \
+          timeout 615 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
+
+# This will lock your screen after 600 seconds of inactivity, then turn off
+# your displays after another 15 seconds, and turn your screens back on when
+# resumed.
 
 ### Input configuration
 
@@ -219,8 +221,7 @@ bindsym $mod+o exec --no-startup-id amixer set Master toggle
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
-    bindsym Print exec grim -g "$(slurp)" ~/external/pictures/screenshots/$(date +%Hh_%Mm_%Ss_%d_%B_%Y).png
-
+    bindsym Print exec grim -g "$(slurp)" ~/path/screenshots/$(date +%Hh_%Mm_%Ss_%d_%B_%Y).png
 #
 # Status Bar:
 #
