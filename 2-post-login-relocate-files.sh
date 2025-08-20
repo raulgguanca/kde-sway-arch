@@ -6,7 +6,9 @@ mv nftables.conf /etc/nftables.conf
 
 sudo nft -f /etc/nftables.conf
 
-sudo mv sway/i3status.conf /etc/i3status.conf
+mkdir .config/i3status
+
+mv sway/i3status.conf ~/.config/i3status/config
 
 mv nvim ~/.config/nvim
 
@@ -32,7 +34,7 @@ ranger --copy-config=all
 ##Fastfetch
 fastfetch --gen-config
 
-mkdir -p ~/projects ~/unzip ~/learn ~/write ~/backup
+mkdir -p ~/Projects ~/Unzip ~/Learn ~/Write ~/Backup
 
 cd .. && rm -rf arch-i3-custom-config-files
 
