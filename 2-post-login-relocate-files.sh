@@ -6,19 +6,9 @@ mv nftables.conf /etc/nftables.conf
 
 sudo nft -f /etc/nftables.conf
 
-mkdir .config/i3status
-
-mv sway/i3status.conf ~/.config/i3status/config
-
-mv nvim ~/.config/nvim
-
-mv sway ~/.config/sway
-
-mv wofi ~/.config/wofi
+mv nvim sway wofi i3status ~/.config/
 
 sudo mkdir -p /etc/X11/xorg.conf.d
-
-sudo mv touchpad-tap.conf /etc/X11/xorg.conf.d/touchpad-tap.conf
 
 sudo mv 00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
 
@@ -34,7 +24,7 @@ ranger --copy-config=all
 ##Fastfetch
 fastfetch --gen-config
 
-mkdir -p ~/Projects ~/Unzip ~/Learn ~/Write ~/Backup
+mkdir -p ~/Projects ~/Unzip ~/Learn ~/Write ~/Backup ~/Pictures/screenshots ~/Pictures/lockscreen ~/Pictures/wallpapers
 
 cd .. && rm -rf arch-i3-custom-config-files
 
