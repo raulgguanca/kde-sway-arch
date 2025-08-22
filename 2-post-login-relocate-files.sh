@@ -21,6 +21,8 @@ sudo mv Courier\ Prime.ttf JMH\ Typewriter\ mono.ttf /usr/share/fonts/
 ##Ranger
 ranger --copy-config=all
 
+mv colorschemes ~/.config/ranger/colorschemes
+
 ##Fastfetch
 fastfetch --gen-config
 

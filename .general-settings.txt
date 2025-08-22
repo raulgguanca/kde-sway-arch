@@ -9,13 +9,14 @@ Directories:
 ##Ranger
 #Set w3m
 ~/.config/ranger/rc.conf
-set preview_images true
+74 set preview_images true
+142 set colorscheme orange
 
 #Set neovim to default editor
 ~/.config/ranger/rifle.conf
 Misc
-mine ^text, label editor = nvim -- "$@"
-!mime ^text, label editor, ext xml|json|csv|tex|py|pl|rb|js|sh|php = nvim -- "$@"
+88 mine ^text, label editor = nvim -- "$@"
+90 !mime ^text, label editor, ext xml|json|csv|tex|py|pl|rb|js|sh|php = nvim -- "$@"
 
 ##Change GTK-Fonts
 GTK2
