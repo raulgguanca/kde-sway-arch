@@ -9,7 +9,7 @@ ranger_cd() {
     rm -f "$tempfile"
 }
 
-gupd() {
+gitupd() {
   git checkout main
   git pull
   git checkout $1
@@ -17,14 +17,18 @@ gupd() {
   git push
 }
 
-gplm() {
+gitplm() {
   git checkout main
   git pull
   git checkout $1
 }
 
-gco() {
+gitco() {
   git commit -m "$1"
 }
 
-export -f ranger_cd gupd gplm gco
+gitch() {
+  git checkout $1
+}
+
+export -f ranger_cd gitupd gitplm gitco gitch
