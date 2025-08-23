@@ -24,7 +24,7 @@ gplm() {
 }
 
 gc() {
-  git commit -m "$1"
+  EDITOR=nvim git commit
 }
 
 gk() {
