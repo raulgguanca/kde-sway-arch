@@ -55,9 +55,10 @@ set $menu "wofi --show run"
    }
 
    input * {
-    Xkb_layout latam,latam,us
-    Xkb_variant dvorak,,
-    Xkb_options grp:alt_shift_toggle,caps:swapescape
+    xkb_layout latam,latam,us
+    xkb_variant dvorak,,
+    xkb_options grp:alt_shift_toggle,caps:swapescape
+    xkb_numlock enabled
    }
 #
 # You can also configure each device individually.
