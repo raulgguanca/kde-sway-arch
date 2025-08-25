@@ -4,6 +4,7 @@ window {
     border-radius: 5px;
     padding: 5px;
     color: rgba(248, 248, 242, 1);            /* @foreground */
+    font-size: 2rem;
 }
 
 #input {
@@ -26,6 +27,7 @@ window {
 #entry:selected {
     background-color: rgba(204, 102, 0, 1);   /* @selected-normal-background */
     color: rgba(248, 248, 242, 1);           /* @selected-normal-foreground */
+    border-radius: 5px;
 }
 
 #entry:active {
