@@ -19,4 +19,6 @@ ranger --copy-config=all
 ##Fastfetch
 fastfetch --gen-config
 
+sudo blkid >> /etc/fstab
+
 exit 0
