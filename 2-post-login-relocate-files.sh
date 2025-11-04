@@ -1,5 +1,7 @@
 #! /bin/bash
 
+mkdir -p ~/.config
+
 mv .alacritty.toml .bash_aliases .bashrc .general-settings.txt themes.sh config-nvim.sh shortcuts.kksrc ~/
 
 mv nftables.conf /etc/nftables.conf
@@ -26,7 +28,7 @@ mv colorschemes ~/.config/ranger/colorschemes
 ##Fastfetch
 fastfetch --gen-config
 
-mkdir -p ~/Projects ~/Unzip ~/Learn ~/Write ~/Backup ~/Pictures/screenshots ~/Pictures/lockscreen ~/Pictures/wallpapers
+mkdir -p ~/{Projects,Unzip,Learn,Write,Backup,Pictures/screenshots,Pictures/lockscreen,Pictures/wallpapers}
 
 cd .. && rm -rf arch-i3-custom-config-files
 
