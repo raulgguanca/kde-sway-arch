@@ -2,7 +2,7 @@
 
 mkdir -p ~/.config
 
-mv .alacritty.toml .bash_aliases .bashrc .general-settings.txt themes.sh config-nvim.sh shortcuts.kksrc ~/
+mv .alacritty.toml .bash_aliases .bashrc .bash_functions .general-settings.txt themes.sh config-nvim.sh shortcuts.kksrc ~/
 
 mv nftables.conf /etc/nftables.conf
 
@@ -28,8 +28,8 @@ mv colorschemes ~/.config/ranger/colorschemes
 ##Fastfetch
 fastfetch --gen-config
 
-mkdir -p ~/{Projects,Unzip,Learn,Write,Backup,Pictures/screenshots,Pictures/lockscreen,Pictures/wallpapers}
+mkdir -p ~/{Projects/personals,Projects/git,Unzip,Learn,Write,Backup,Pictures/screenshots,Pictures/lockscreen,Pictures/wallpapers}
 
-cd .. && rm -rf arch-i3-custom-config-files
+cd .. && rm -rf kde-sway-arch
 
 exit 0
