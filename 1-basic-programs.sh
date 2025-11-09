@@ -18,4 +18,14 @@ ranger --copy-config=all
 ##Fastfetch
 fastfetch --gen-config
 
+#power management and buttons
+echo HandlePowerKey=ignore >> /etc/systemd/logind.conf
+echo HandleSuspendKey=ignore >> /etc/systemd/logind.conf
+echo HandleSuspendKeyLongPress=ignore >> /etc/systemd/logind.conf
+echo HandleHibernateKey=ignore >> /etc/systemd/logind.conf
+echo HandleHibernateKeyLongPress=ignore >> /etc/systemd/logind.conf
+echo HandleLidSwitch=ignore >> /etc/systemd/logind.conf
+echo HandleLidSwitchExternalPower=ignore >> /etc/systemd/logind.conf
+echo HandleLidSwitchDocked=ignore >> /etc/systemd/logind.conf
+
 exit 0
