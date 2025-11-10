@@ -30,6 +30,10 @@ fastfetch --gen-config
 
 mkdir -p ~/{Projects/personals,Projects/git,Unzip,Learn,Write,Backup,Pictures/screenshots,Pictures/lockscreen,Pictures/wallpapers}
 
+ssh-keygen -t ed25519
+
+chmod 400 ~/.ssh/id_ed25519
+
 cd .. && rm -rf kde-sway-arch
 
 exit 0
