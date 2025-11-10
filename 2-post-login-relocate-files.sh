@@ -4,7 +4,7 @@ mkdir -p ~/.config
 
 mv .alacritty.toml .bash_aliases .bashrc .bash_functions .general-settings.txt themes.sh config-nvim.sh shortcuts.kksrc ~/
 
-mv nftables.conf /etc/nftables.conf
+sudo mv nftables.conf /etc/nftables.conf
 
 sudo nft -f /etc/nftables.conf
 
