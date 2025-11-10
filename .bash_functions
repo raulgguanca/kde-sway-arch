@@ -24,15 +24,11 @@ gplm() {
 }
 
 gc() {
-  EDITOR=nvim git commit
+  git add $1 && EDITOR=nvim git commit $1
 }
 
 gk() {
   git checkout $1
 }
 
-ga() {
-  git add $1
-}
-
-export -f ranger_cd gm gplm gc gk ga
+export -f ranger_cd gm gplm gc gk
