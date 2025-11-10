@@ -28,7 +28,7 @@ mv colorschemes ~/.config/ranger/colorschemes
 ##Fastfetch
 fastfetch --gen-config
 
-mkdir -p ~/{Projects/personals,Projects/git,Unzip,Learn,Write,Backup,Pictures/screenshots,Pictures/lockscreen,Pictures/wallpapers}
+mkdir -p ~/{Projects/{personals,git},OutsidersFiles,Downloads,Unzip,Learn,Write,Backup,Pictures/{screenshots,lockscreen,wallpapers}}
 
 ssh-keygen -t ed25519
 
