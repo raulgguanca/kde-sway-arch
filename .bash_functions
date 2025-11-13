@@ -9,7 +9,7 @@ ranger_cd() {
     rm -f "$tempfile"
 }
 
-gm () {
+gm() {
   git checkout main
   git pull
   git checkout $1
