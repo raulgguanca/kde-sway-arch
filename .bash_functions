@@ -31,4 +31,8 @@ gk() {
   git checkout $1
 }
 
-export -f ranger_cd gm gplm gc gk
+ym() {
+  mpv $1 --no-video
+}
+
+export -f ranger_cd gm gplm gc gk ym

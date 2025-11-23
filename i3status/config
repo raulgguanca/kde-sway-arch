@@ -16,9 +16,10 @@ order += "volume master"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
-#order += "disk /"
+order += "disk /var"
 #order += "load"
 order += "memory"
+order += "cpu_usage"
 order += "tztime local"
 
 wireless _first_ {
@@ -43,12 +44,13 @@ battery all {
         low_threshold = 10
 }
 
-disk "/" {
-        format = "%avail"
+disk "/var" {
+        format = "var %avail"
+        low_threshold = 10
 }
 
 memory {
-        format = "%used"
+        format = "ram %used"
         threshold_degraded = "10%"
         format_degraded = "MEMORY: %free"
 }
@@ -63,3 +65,6 @@ volume master {
         device = "pulse"
 }
 
+cpu_usage {
+  format = "CPU: %usage"
+}
