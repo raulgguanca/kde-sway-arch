@@ -35,4 +35,15 @@ ym() {
   mpv $1 --no-video
 }
 
-export -f ranger_cd gm gplm gc gk ym
+clVar() {
+  sudo pacman -Scc
+  sudo journalctl --vacuum-size=100M
+  sudo du -sh /var/cache/*
+}
+
+ms() {
+  cp ~/.config/sway/config ~/.config/sway/flag
+  cp ~/.config/sway/.config-switched ~/.config/sway/config
+  cp ~/.config/sway/flag ~/.config/sway/.config-switched
+}
+export -f ranger_cd gm gplm gc gk ym clVar ms
