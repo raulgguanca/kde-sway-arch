@@ -1,4 +1,5 @@
 #! /bin/bash
+set -e
 
 git clone https://github.com/vinceliuice/Orchis-theme
 cd Orchis-theme
