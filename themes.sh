@@ -29,11 +29,9 @@ echo -e 'installing Tela Circle red theme\n'
 
 ./install.sh -c red 
 
-echo -e 'cleaning\n'
+echo 'finishing up and cleaning'
 
 cd .. && rm -rf Tela-circle-icon-theme
-
-echo 'finishing up and cleaning'
 
 rm -rf themes.sh
 
