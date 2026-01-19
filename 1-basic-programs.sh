@@ -43,7 +43,7 @@ HandleLidSwitchDocked=ignore' >> /etc/systemd/logind.conf
 
 echo -e 'finishing up and cleaning\n'
 
-cd / && rm -rf kde-sway-arch
+cd / && mv kde-sway-arch /home/@1
 
 echo 'remember to change the custom port in nftables'
 
