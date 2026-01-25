@@ -9,7 +9,7 @@ sudo mkdir -p /root/.config
 
 echo -e 'moving files\n'
 
-mv .alacritty.toml .bash_aliases .bashrc .bash_functions .general-settings.txt themes.sh config-nvim.sh shortcuts.kksrc ~/
+mv .alacritty.toml .bash_aliases .bashrc .bash_functions .general-settings.txt themes.sh shortcuts.kksrc ~/
 
 sudo cp -r nvim ranger fastfetch /root/.config/
 
