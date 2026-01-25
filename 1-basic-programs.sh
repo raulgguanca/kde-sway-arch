@@ -21,14 +21,6 @@ systemctl enable tlp.service
 
 #systemctl enable sddm
 
-echo -e 'setting up ranger and fastfetch\n'
-
-##Ranger
-ranger --copy-config=all
-
-##Fastfetch
-fastfetch --gen-config
-
 echo -e 'setting up energy behavior\n'
 
 #power management and buttons
