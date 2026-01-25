@@ -11,7 +11,7 @@ echo -e 'moving files\n'
 
 mv .alacritty.toml .bash_aliases .bashrc .bash_functions .general-settings.txt themes.sh config-nvim.sh shortcuts.kksrc ~/
 
-sudo cp -r ranger fastfetch /root/.config/
+sudo cp -r nvim ranger fastfetch /root/.config/
 
 mv nvim sway wofi i3status mpv ranger fastfetch ~/.config/
 
