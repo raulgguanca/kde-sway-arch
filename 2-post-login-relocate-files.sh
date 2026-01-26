@@ -21,6 +21,12 @@ sudo mv 00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
 
 sudo mv Courier\ Prime.ttf JMH\ Typewriter\ mono.ttf /usr/share/fonts/
 
+echo -e "setting up nftables"
+
+read -p "insert port number: " pNumb
+
+sed -i "s/portNumber/$pNumb/" nftables.conf
+
 sudo mv nftables.conf /etc/nftables.conf
 
 echo -e 'enabling nftables with custom settings\n'
