@@ -38,8 +38,10 @@ STOP_CHARGE_THRESH_BAT0=80' >>/etc/tlp.conf
 
 echo -e 'finishing up and cleaning\n'
 
-cd / && mv kde-sway-arch /home/raul/
+read -p 'user?: ' user
 
-echo 'remember to change the custom port in nftables'
+cd / && mv kde-sway-arch /home/$user/
+
+chown -R $user /home/$user/kde-sway-arch
 
 exit 0
