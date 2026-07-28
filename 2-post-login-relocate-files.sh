@@ -7,6 +7,10 @@ mkdir -p ~/.config
 
 sudo mkdir -p /root/.config
 
+echo -e 'changing to git folder\n'
+
+cd ~/kde-sway-arch
+
 echo -e 'moving files\n'
 
 mv .alacritty.toml .bash_aliases .bashrc .bash_functions .general-settings.txt themes.sh shortcuts.kksrc ~/
@@ -21,7 +25,7 @@ sudo mv 00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
 
 sudo mv Courier\ Prime.ttf JMH\ Typewriter\ mono.ttf /usr/share/fonts/
 
-echo -e "setting up nftables"
+echo -e "setting up nftables\n"
 
 read -p "insert port number: " pNumb
 
