@@ -46,4 +46,13 @@ ms() {
   cp ~/.config/sway/.config-switched ~/.config/sway/config
   cp ~/.config/sway/flag ~/.config/sway/.config-switched
 }
-export -f ranger_cd gm gplm gc gk ym clVar ms
+
+nt() {
+    echo "- $1" >> ~/notes.txt
+  }
+
+clnt() {
+    echo -e "*** Notes $1 ***\n" > ~/notes.txt
+  }
+
+export -f ranger_cd gm gplm gc gk ym clVar ms nt clnt
