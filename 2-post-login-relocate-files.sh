@@ -7,6 +7,8 @@ mkdir -p ~/.config
 
 sudo mkdir -p /root/.config
 
+touch notes.txt
+
 echo -e 'changing to git folder\n'
 
 cd ~/kde-sway-arch
