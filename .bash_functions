@@ -48,11 +48,15 @@ ms() {
 }
 
 nt() {
-    echo "- $1" >> ~/notes.txt
-  }
+  echo "- $1" >> ~/notes.txt
+}
 
 clnt() {
-    echo -e "*** Notes $1 ***\n" > ~/notes.txt
-  }
+  echo -e "*** Notes $1 ***\n" > ~/notes.txt
+}
 
-export -f ranger_cd gm gplm gc gk ym clVar ms nt clnt
+bkup() {
+  gocryptfs /run/media/$1/RABACKUP1/.files/dotFiles/ ~/Downloads/encript
+}
+
+export -f ranger_cd gm gplm gc gk ym clVar ms nt clnt bkup
