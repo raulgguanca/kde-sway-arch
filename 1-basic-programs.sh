@@ -38,8 +38,18 @@ echo -e 'setting up java in wayland\n'
 
 echo "_JAVA_AWT_WM_NONREPARENTING=1" >>/etc/environment
 
-echo -e 'finishing up and cleaning\n'
+echo -e 'finishing up and moving git files\n'
 
-cd / && rm -rf kde-sway-arch
+cd /
+
+read -p "insert user name: " usr
+
+mv /kde-sway-arch /home/$usr/kde-sway-arch
+
+chown -R $usr /home/$usr/kde-sway-arch
+
+echo -e 'cleaning\n'
+
+rm /home/$usr/kde-sway-arch/1-basic-programs.sh
 
 exit 0
