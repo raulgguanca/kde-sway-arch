@@ -234,8 +234,8 @@ bindsym $mod+o exec --no-startup-id amixer set Master toggle
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
     # Special key to take a screenshot with grim
-    bindsym $mod+Print exec grim ~/Pictures/screenshots/$(date +%Hh_%Mm_%Ss_%d_%B_%Y).png
-    bindsym Print exec grim -g "$(slurp)" ~/Pictures/screenshots/$(date +%Hh_%Mm_%Ss_%d_%B_%Y).png
+    bindsym $mod+Print exec grim -t jpeg ~/Pictures/screenshots/$(date +%Hh_%Mm_%Ss_%d_%B_%Y).jpg
+    bindsym Print exec grim -t jpeg -g "$(slurp)" ~/Pictures/screenshots/$(date +%Hh_%Mm_%Ss_%d_%B_%Y).jpg
 #
 # Status Bar:
 #
