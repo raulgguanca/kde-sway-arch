@@ -41,7 +41,11 @@ sudo nft -f /etc/nftables.conf
 
 echo -e 'creating directories\n'
 
-mkdir -p ~/{Projects/{personals,git},OutsidersFiles,Downloads/encript,Unzip,Learn,Write,Backup,Pictures/{screenshots,lockscreen,wallpapers}}
+mkdir -p ~/{Projects/{personals,git},OutsidersFiles,Downloads/encript,Unzip,Learn,Write,Backup,Pictures/{screenshots,lockscreen,wallpapers},.bk}
+
+echo -e 'setting up syncthing\n'
+
+systemctl --user enable --now syncthing.service
 
 echo -e 'setting up ssh\n'
 
